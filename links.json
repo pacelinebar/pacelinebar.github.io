@@ -345,6 +345,22 @@
       "stars": 63731,
       "language": "TypeScript",
       "featured": "2026-11-05T21:00:00-03:00"
+    },
+    {
+      "slug": "activepieces",
+      "repo": "activepieces/activepieces",
+      "tagline": "Open source Zapier alternative with AI and MCP",
+      "stars": 25235,
+      "language": "TypeScript",
+      "featured": "2026-11-06T15:00:00-03:00"
+    },
+    {
+      "slug": "metagpt",
+      "repo": "FoundationAgents/MetaGPT",
+      "tagline": "Multi-agent framework that works like a software team",
+      "stars": 71028,
+      "language": "Python",
+      "featured": "2026-11-06T18:00:00-03:00"
     }
   ]
 }
