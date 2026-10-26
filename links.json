@@ -209,6 +209,118 @@
       "stars": 6484,
       "language": "Python",
       "featured": "2026-11-02T09:00:00-03:00"
+    },
+    {
+      "slug": "gods-eye-view",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "tagline": "Live 3D globe of flights, ships and satellites",
+      "stars": 60300,
+      "language": "JavaScript",
+      "featured": "2026-10-28T15:00:00-03:00"
+    },
+    {
+      "slug": "morluto-rea",
+      "repo": "morluto/rea",
+      "tagline": "One MCP for reverse engineering apps and binaries",
+      "stars": 389533,
+      "language": "TypeScript",
+      "featured": "2026-10-28T18:00:00-03:00"
+    },
+    {
+      "slug": "openviking",
+      "repo": "volcengine/OpenViking",
+      "tagline": "Context database for AI agent memory and skills",
+      "stars": 40873,
+      "language": "Python",
+      "featured": "2026-10-28T21:00:00-03:00"
+    },
+    {
+      "slug": "destructive-command-guard",
+      "repo": "Dicklesworthstone/destructive_command_guard",
+      "tagline": "Blocks destructive git and shell commands from agents",
+      "stars": 6214,
+      "language": "Rust",
+      "featured": "2026-10-29T09:00:00-03:00"
+    },
+    {
+      "slug": "archify",
+      "repo": "tt-a1i/archify",
+      "tagline": "Turns ideas and codebases into interactive diagrams",
+      "stars": 89647,
+      "language": "JavaScript",
+      "featured": "2026-10-29T15:00:00-03:00"
+    },
+    {
+      "slug": "claude-seo",
+      "repo": "AgriciDaniel/claude-seo",
+      "tagline": "Free SEO audits inside Claude Code",
+      "stars": 21845,
+      "language": "Python",
+      "featured": "2026-10-29T18:00:00-03:00"
+    },
+    {
+      "slug": "hindsight",
+      "repo": "vectorize-io/hindsight",
+      "tagline": "Agent memory that learns over time",
+      "stars": 54035,
+      "language": "Python",
+      "featured": "2026-10-29T21:00:00-03:00"
+    },
+    {
+      "slug": "aider",
+      "repo": "Aider-AI/aider",
+      "tagline": "AI pair programming in your terminal",
+      "stars": 49764,
+      "language": "Python",
+      "featured": "2026-10-30T09:00:00-03:00"
+    },
+    {
+      "slug": "aaif-goose-goose",
+      "repo": "aaif-goose/goose",
+      "tagline": "Open source AI agent: desktop app, CLI and API",
+      "stars": 55754,
+      "language": "Rust",
+      "featured": "2026-10-30T15:00:00-03:00"
+    },
+    {
+      "slug": "modelcontextprotocol-servers",
+      "repo": "modelcontextprotocol/servers",
+      "tagline": "Reference implementations of MCP servers",
+      "stars": 91583,
+      "language": "TypeScript",
+      "featured": "2026-11-04T09:00:00-03:00"
+    },
+    {
+      "slug": "awesome-mcp-servers",
+      "repo": "punkpeye/awesome-mcp-servers",
+      "tagline": "Curated list of MCP servers",
+      "stars": 96896,
+      "language": "",
+      "featured": "2026-11-04T15:00:00-03:00"
+    },
+    {
+      "slug": "mem0",
+      "repo": "mem0ai/mem0",
+      "tagline": "Memory layer for AI agents and apps",
+      "stars": 67845,
+      "language": "Python",
+      "featured": "2026-11-04T18:00:00-03:00"
+    },
+    {
+      "slug": "graphiti",
+      "repo": "getzep/graphiti",
+      "tagline": "Temporal knowledge graphs for AI agents",
+      "stars": 32239,
+      "language": "Python",
+      "featured": "2026-11-04T21:00:00-03:00"
+    },
+    {
+      "slug": "letta-ai-letta",
+      "repo": "letta-ai/letta",
+      "tagline": "Stateful agents with memory that learns",
+      "stars": 25261,
+      "language": "",
+      "featured": "2026-11-05T09:00:00-03:00"
     }
   ]
 }
