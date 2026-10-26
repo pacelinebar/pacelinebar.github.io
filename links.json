@@ -16,7 +16,7 @@
       "tagline": "The design language that makes your AI harness better at design.",
       "stars": 86330,
       "language": "Rust",
-      "featured": "2026-10-24T22"
+      "featured": "2026-10-24T22:00:00-03:00"
     },
     {
       "slug": "hallmark",
@@ -24,7 +24,7 @@
       "tagline": "Anti-AI-slop design skill for Claude Code, Cursor and Codex.",
       "stars": 32055,
       "language": "CSS",
-      "featured": "2026-10-24T23"
+      "featured": "2026-10-24T23:00:00-03:00"
     },
     {
       "slug": "claude-howto",
@@ -32,7 +32,7 @@
       "tagline": "A visual, example-driven guide to Claude Code, with copy-paste templates.",
       "stars": 44491,
       "language": "Python",
-      "featured": "2026-10-25T09"
+      "featured": "2026-10-25T09:00:00-03:00"
     },
     {
       "slug": "openshell",
@@ -40,7 +40,7 @@
       "tagline": "The safe, private runtime for autonomous AI agents.",
       "stars": 19430,
       "language": "Rust",
-      "featured": "2026-10-25T14"
+      "featured": "2026-10-25T14:00:00-03:00"
     },
     {
       "slug": "voicestudio",
@@ -48,7 +48,7 @@
       "tagline": "A fully local, open-source alternative to ElevenLabs.",
       "stars": 84864,
       "language": "Python",
-      "featured": "2026-10-25T17"
+      "featured": "2026-10-25T17:00:00-03:00"
     },
     {
       "slug": "cindy",
@@ -56,7 +56,7 @@
       "tagline": "An open-source AI agent that works out of the box.",
       "stars": 4046,
       "language": "TypeScript",
-      "featured": "2026-10-25T21"
+      "featured": "2026-10-25T21:00:00-03:00"
     }
   ]
 }

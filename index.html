@@ -37,6 +37,7 @@
   .list { display:grid; gap:10px; }
   .card { display:flex; gap:12px; align-items:flex-start; text-decoration:none; color:inherit; background:var(--card); border:1px solid var(--line);
     border-radius:16px; padding:14px; transition:border-color .15s, transform .15s; scroll-margin-top:16px; }
+  .card[hidden] { display:none; }
   .card:hover { border-color:#33404e; transform:translateY(-1px); }
   .card:target { border-color:var(--mint); box-shadow:0 0 0 3px color-mix(in srgb, var(--mint) 22%, transparent); }
   .avatar { width:44px; height:44px; border-radius:12px; background:#1b232d; flex:none; }
@@ -64,9 +65,9 @@
     </div>
   </section>
 
-  <h2>Repos we featured · 6</h2>
+  <h2>Repos we featured · <span id="count">6</span></h2>
   <div class="list">
-      <a class="card" id="cindy" href="https://github.com/makecindy/cindy" target="_blank" rel="noopener">
+      <a class="card" id="cindy" data-featured="2026-10-25T21:00:00-03:00" href="https://github.com/makecindy/cindy" target="_blank" rel="noopener">
         <img class="avatar" src="https://github.com/makecindy.png?size=96" alt="" width="44" height="44" loading="lazy">
         <div class="body">
           <div class="name"><span class="owner">makecindy/</span>cindy</div>
@@ -75,7 +76,7 @@
         </div>
         <span class="go" aria-hidden="true">↗</span>
       </a>
-      <a class="card" id="voicestudio" href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener">
+      <a class="card" id="voicestudio" data-featured="2026-10-25T17:00:00-03:00" href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener">
         <img class="avatar" src="https://github.com/debpalash.png?size=96" alt="" width="44" height="44" loading="lazy">
         <div class="body">
           <div class="name"><span class="owner">debpalash/</span>VoiceStudio</div>
@@ -84,7 +85,7 @@
         </div>
         <span class="go" aria-hidden="true">↗</span>
       </a>
-      <a class="card" id="openshell" href="https://github.com/NVIDIA/OpenShell" target="_blank" rel="noopener">
+      <a class="card" id="openshell" data-featured="2026-10-25T14:00:00-03:00" href="https://github.com/NVIDIA/OpenShell" target="_blank" rel="noopener">
         <img class="avatar" src="https://github.com/NVIDIA.png?size=96" alt="" width="44" height="44" loading="lazy">
         <div class="body">
           <div class="name"><span class="owner">NVIDIA/</span>OpenShell</div>
@@ -93,7 +94,7 @@
         </div>
         <span class="go" aria-hidden="true">↗</span>
       </a>
-      <a class="card" id="claude-howto" href="https://github.com/luongnv89/claude-howto" target="_blank" rel="noopener">
+      <a class="card" id="claude-howto" data-featured="2026-10-25T09:00:00-03:00" href="https://github.com/luongnv89/claude-howto" target="_blank" rel="noopener">
         <img class="avatar" src="https://github.com/luongnv89.png?size=96" alt="" width="44" height="44" loading="lazy">
         <div class="body">
           <div class="name"><span class="owner">luongnv89/</span>claude-howto</div>
@@ -102,7 +103,7 @@
         </div>
         <span class="go" aria-hidden="true">↗</span>
       </a>
-      <a class="card" id="hallmark" href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener">
+      <a class="card" id="hallmark" data-featured="2026-10-24T23:00:00-03:00" href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener">
         <img class="avatar" src="https://github.com/Nutlope.png?size=96" alt="" width="44" height="44" loading="lazy">
         <div class="body">
           <div class="name"><span class="owner">Nutlope/</span>hallmark</div>
@@ -111,7 +112,7 @@
         </div>
         <span class="go" aria-hidden="true">↗</span>
       </a>
-      <a class="card" id="impeccable" href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener">
+      <a class="card" id="impeccable" data-featured="2026-10-24T22:00:00-03:00" href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener">
         <img class="avatar" src="https://github.com/pbakaus.png?size=96" alt="" width="44" height="44" loading="lazy">
         <div class="body">
           <div class="name"><span class="owner">pbakaus/</span>impeccable</div>
@@ -121,6 +122,17 @@
         <span class="go" aria-hidden="true">↗</span>
       </a>
   </div>
+  <script>
+    (() => {
+      const now = Date.now();
+      let shown = 0;
+      for (const card of document.querySelectorAll('.card[data-featured]')) {
+        if (Date.parse(card.dataset.featured) > now) card.hidden = true;
+        else shown++;
+      }
+      document.getElementById('count').textContent = shown;
+    })();
+  </script>
 
   <footer>
     <p>Independent picks for Claude Code &amp; Codex users. Not affiliated with these projects.</p>

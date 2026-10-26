@@ -5,13 +5,14 @@ const data = JSON.parse(readFileSync(new URL('./links.json', import.meta.url), '
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const stars = n => n >= 1000 ? `${(n / 1000).toFixed(n >= 100000 ? 0 : 1).replace(/\.0$/, '')}k` : String(n);
 
-const repos = [...data.repos].sort((a, b) => b.featured.localeCompare(a.featured) || b.stars - a.stars);
+// featured is the post time (ISO with offset); a card stays hidden on the page until then.
+const repos = [...data.repos].sort((a, b) => Date.parse(b.featured) - Date.parse(a.featured) || b.stars - a.stars);
 const p = data.pinned;
 
 const cards = repos.map(r => {
   const [owner, name] = r.repo.split('/');
   return `
-      <a class="card" id="${esc(r.slug)}" href="https://github.com/${esc(r.repo)}" target="_blank" rel="noopener">
+      <a class="card" id="${esc(r.slug)}" data-featured="${esc(r.featured)}" href="https://github.com/${esc(r.repo)}" target="_blank" rel="noopener">
         <img class="avatar" src="https://github.com/${esc(owner)}.png?size=96" alt="" width="44" height="44" loading="lazy">
         <div class="body">
           <div class="name"><span class="owner">${esc(owner)}/</span>${esc(name)}</div>
@@ -61,6 +62,7 @@ const html = `<!doctype html>
   .list { display:grid; gap:10px; }
   .card { display:flex; gap:12px; align-items:flex-start; text-decoration:none; color:inherit; background:var(--card); border:1px solid var(--line);
     border-radius:16px; padding:14px; transition:border-color .15s, transform .15s; scroll-margin-top:16px; }
+  .card[hidden] { display:none; }
   .card:hover { border-color:#33404e; transform:translateY(-1px); }
   .card:target { border-color:var(--mint); box-shadow:0 0 0 3px color-mix(in srgb, var(--mint) 22%, transparent); }
   .avatar { width:44px; height:44px; border-radius:12px; background:#1b232d; flex:none; }
@@ -88,9 +90,20 @@ const html = `<!doctype html>
     </div>
   </section>
 
-  <h2>Repos we featured · ${repos.length}</h2>
+  <h2>Repos we featured · <span id="count">${repos.length}</span></h2>
   <div class="list">${cards}
   </div>
+  <script>
+    (() => {
+      const now = Date.now();
+      let shown = 0;
+      for (const card of document.querySelectorAll('.card[data-featured]')) {
+        if (Date.parse(card.dataset.featured) > now) card.hidden = true;
+        else shown++;
+      }
+      document.getElementById('count').textContent = shown;
+    })();
+  </script>
 
   <footer>
     <p>Independent picks for Claude Code &amp; Codex users. Not affiliated with these projects.</p>
