@@ -57,6 +57,14 @@
       "stars": 4046,
       "language": "TypeScript",
       "featured": "2026-10-25T21:00:00-03:00"
+    },
+    {
+      "slug": "gemini-cli",
+      "repo": "google-gemini/gemini-cli",
+      "tagline": "Open-source AI agent that brings Gemini into your terminal",
+      "stars": 108387,
+      "language": "TypeScript",
+      "featured": "2026-10-26T09:00:00-03:00"
     }
   ]
 }
