@@ -65,6 +65,150 @@
       "stars": 108387,
       "language": "TypeScript",
       "featured": "2026-10-26T09:00:00-03:00"
+    },
+    {
+      "slug": "plandex",
+      "repo": "plandex-ai/plandex",
+      "tagline": "Terminal AI agent for large, multi-file coding tasks",
+      "stars": 15780,
+      "language": "Go",
+      "featured": "2026-10-28T21:00:00-03:00"
+    },
+    {
+      "slug": "openinterpreter-openinterpreter",
+      "repo": "openinterpreter/openinterpreter",
+      "tagline": "A coding agent built for low-cost open models",
+      "stars": 68672,
+      "language": "Rust",
+      "featured": "2026-10-29T09:00:00-03:00"
+    },
+    {
+      "slug": "aichat",
+      "repo": "sigoden/aichat",
+      "tagline": "All-in-one LLM CLI with shell assistant and RAG",
+      "stars": 10520,
+      "language": "Rust",
+      "featured": "2026-10-29T13:00:00-03:00"
+    },
+    {
+      "slug": "charmbracelet-mods",
+      "repo": "charmbracelet/mods",
+      "tagline": "AI for the command line, built for pipelines",
+      "stars": 4522,
+      "language": "Go",
+      "featured": "2026-10-29T17:00:00-03:00"
+    },
+    {
+      "slug": "shell-gpt",
+      "repo": "TheR1D/shell_gpt",
+      "tagline": "Generate shell commands and code with an LLM",
+      "stars": 12300,
+      "language": "Python",
+      "featured": "2026-10-29T21:00:00-03:00"
+    },
+    {
+      "slug": "ai-shell",
+      "repo": "BuilderIO/ai-shell",
+      "tagline": "Natural language to shell commands",
+      "stars": 5307,
+      "language": "TypeScript",
+      "featured": "2026-10-30T09:00:00-03:00"
+    },
+    {
+      "slug": "aicommits",
+      "repo": "Nutlope/aicommits",
+      "tagline": "Writes your git commit messages with AI",
+      "stars": 9119,
+      "language": "TypeScript",
+      "featured": "2026-10-30T13:00:00-03:00"
+    },
+    {
+      "slug": "opencommit",
+      "repo": "di-sukharev/opencommit",
+      "tagline": "Auto-generate commit messages with AI",
+      "stars": 7544,
+      "language": "JavaScript",
+      "featured": "2026-10-30T17:00:00-03:00"
+    },
+    {
+      "slug": "browser-use",
+      "repo": "browser-use/browser-use",
+      "tagline": "Open-source AI browser agent in Python",
+      "stars": 119151,
+      "language": "Python",
+      "featured": "2026-10-30T21:00:00-03:00"
+    },
+    {
+      "slug": "firecrawl",
+      "repo": "firecrawl/firecrawl",
+      "tagline": "Web search, scrape and crawl API for AI agents",
+      "stars": 195409,
+      "language": "TypeScript",
+      "featured": "2026-10-31T09:00:00-03:00"
+    },
+    {
+      "slug": "crawl4ai",
+      "repo": "unclecode/crawl4ai",
+      "tagline": "Turns any website into LLM-ready Markdown",
+      "stars": 86277,
+      "language": "Python",
+      "featured": "2026-10-31T13:00:00-03:00"
+    },
+    {
+      "slug": "skyvern",
+      "repo": "Skyvern-AI/skyvern",
+      "tagline": "Automates browser workflows with LLMs and vision",
+      "stars": 23276,
+      "language": "Python",
+      "featured": "2026-10-31T17:00:00-03:00"
+    },
+    {
+      "slug": "jina-ai-reader",
+      "repo": "jina-ai/reader",
+      "tagline": "Turns any URL into LLM-friendly input",
+      "stars": 12194,
+      "language": "TypeScript",
+      "featured": "2026-10-31T21:00:00-03:00"
+    },
+    {
+      "slug": "stagehand",
+      "repo": "browserbase/stagehand",
+      "tagline": "SDK for browser agents in TypeScript, Python, Go",
+      "stars": 25814,
+      "language": "TypeScript",
+      "featured": "2026-11-01T09:00:00-03:00"
+    },
+    {
+      "slug": "steel-browser",
+      "repo": "steel-dev/steel-browser",
+      "tagline": "Open-source browser API for AI agents",
+      "stars": 7866,
+      "language": "TypeScript",
+      "featured": "2026-11-01T13:00:00-03:00"
+    },
+    {
+      "slug": "d4vinci-scrapling",
+      "repo": "D4Vinci/Scrapling",
+      "tagline": "Python web scraping from one request to a crawl",
+      "stars": 89751,
+      "language": "Python",
+      "featured": "2026-11-01T17:00:00-03:00"
+    },
+    {
+      "slug": "nanobrowser",
+      "repo": "nanobrowser/nanobrowser",
+      "tagline": "Open-source AI web agent in your own browser",
+      "stars": 14181,
+      "language": "TypeScript",
+      "featured": "2026-11-01T21:00:00-03:00"
+    },
+    {
+      "slug": "harbor-framework-harbor",
+      "repo": "harbor-framework/harbor",
+      "tagline": "Framework for evaluating and optimizing agents",
+      "stars": 6473,
+      "language": "Python",
+      "featured": "2026-11-02T09:00:00-03:00"
     }
   ]
 }
