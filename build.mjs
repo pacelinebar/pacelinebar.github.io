@@ -4,6 +4,8 @@ import { readFileSync, writeFileSync } from 'node:fs';
 const data = JSON.parse(readFileSync(new URL('./links.json', import.meta.url), 'utf8'));
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const stars = n => n >= 1000 ? `${(n / 1000).toFixed(n >= 100000 ? 0 : 1).replace(/\.0$/, '')}k` : String(n);
+// Share previews (Facebook, X, LinkedIn) only fetch absolute URLs.
+const SITE = 'https://pacelinebar.github.io/';
 
 // featured is the post time (ISO with offset); a card stays hidden on the page until then.
 const repos = [...data.repos].sort((a, b) => Date.parse(b.featured) - Date.parse(a.featured) || b.stars - a.stars);
@@ -17,7 +19,7 @@ const cards = repos.map(r => {
         <div class="body">
           <div class="name"><span class="owner">${esc(owner)}/</span>${esc(name)}</div>
           <p>${esc(r.tagline)}</p>
-          <div class="meta"><span class="star">★ ${stars(r.stars)}</span><span>${esc(r.language)}</span></div>
+          <div class="meta"><span class="star">★ ${stars(r.stars)}</span>${r.language ? `<span>${esc(r.language)}</span>` : ''}</div>
         </div>
         <span class="go" aria-hidden="true">↗</span>
       </a>`;
@@ -33,7 +35,12 @@ const html = `<!doctype html>
 <meta name="theme-color" content="#07090d">
 <meta property="og:title" content="Paceline · links">
 <meta property="og:description" content="${esc(p.tagline)}">
-<meta property="og:image" content="assets/paceline-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="${SITE}">
+<meta property="og:image" content="${SITE}assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
